@@ -1,0 +1,75 @@
+body
+{
+    background: #B5E1FF;
+    text-align: left;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 17%;
+  background: #B5E1FF;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the right column/main box */
+article {
+  float: left;
+  padding: 20px;
+  width: 83%;
+  background-color: #C9EAFF;
+  height: 1300px;
+}
+
+/* Style for buttons */
+.button1 {
+  background-color: #C9EAFF;
+  border: none;
+  cursor: pointer;
+}
+
+/* Making the photo fit into the screen */
+#familyPhoto {
+  height: 375px;
+  width: 650px;
+}
+
+#photo {
+  height: 550px;
+  width: 400px;
+}
+
+/* Hide the contents */
+#seg2 {
+  visibility: hidden;
+}
+
+#height {
+  height: 1800px;
+}
+
+/* Make the video center aligned */
+#video {
+  text-align: center;
+}
+
+/* Font style for paragraphs */
+.font {
+  font-size: 18px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+h1 {
+  font-family: serif;
+  font-weight: bold;
+}
+

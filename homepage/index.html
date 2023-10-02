@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    Want to know me more?
+                    Visit the following pages.
+                </li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="hobbies.html">My Hobbies</a></li>
+                <li><a href="family.html">My Family</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <div id="seg1">
+                <h1>Hello!</h1>
+                What is your name?
+
+                <form onsubmit="hello(); return false;">
+                    <input type="text" id="name">
+                    <input type="submit" value="Done" class="btn btn-primary">
+                </form>
+            </div>
+
+            <div id="seg2">
+                <h1>Welcome to my Webpage!</h1>
+
+                <br>
+                <h2>I am Kruthi S.</h2>
+
+                <br>
+                <p class="font">I live in Bangalore, Karnataka, India.</p>
+                <p class="font">Currently, I am studying engineering at BMS College of Engineering in Bangalore.</p>
+                <p class="italic">Here is a photo of me!</p>
+
+                <img src="photo.jpg" alt="Picture of me" id="photo">
+            </div>
+
+            <script>
+                function hello() {
+                  let name = document.querySelector('#name').value;
+
+                  if (name === '')
+                  {
+                      alert("Hello! Hope you are having a nice day :)");
+                  }
+
+                  else
+                  alert("Hello, " +name+ "! Hope you are having a nice day :)");
+
+                  document.querySelector('#seg1').innerHTML = "";
+                  document.querySelector('#seg2').style.visibility = 'visible';
+                }
+            </script>
+        </article>
+    </body>
+</html>

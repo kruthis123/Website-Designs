@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    Want to know me more?
+                    Visit the following pages.
+                </li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="hobbies.html">My Hobbies</a></li>
+                <li><a href="family.html">My Family</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <article id="height">
+            <h1>My hobbies</h1>
+
+            <br>
+
+            <h2>Singing</h2>
+            <p>&#x1F3B6;</p>
+            <p class="font">I enjoy listening to music and singing bollywood songs. I mostly listen to slow and soft music while I also enjoy fast numbers. I've not been trained professionally for singing but I do believe and have heard from others that I have a sweet voice.</p>
+
+            <br>
+            <h2>Dancing</h2>
+            <p>&#x1F483;</p>
+            <p class="font">Dancing is my most favourite hobby and makes me very happy and also relieves my stress. I've been learning different forms of dance from when I was a kid. I've majorly been training in Kathak, a classical dance form of North India, for about 7 years now and continuing at Abhinava Dance Company, Bangalore. </p>
+
+            <a href="https://www.youtube.com/results?search_query=abhinava+dance+company">Link to view the youtube channel of Abhinava Dance Company.</a>
+            <p>Do visit the above link to enjoy some wonderful videos of Kathak performed by Abhinava Dance Company.</p>
+
+            <p class="italic">Here is a small dance video of me. Do watch it and give a thumbs up in the end if you like the video :)</p>
+
+            <br>
+            <div id="video">
+              <button onclick="play()" class="button1 btn btn-outline-primary" style="transform: rotate(90deg);">&#x1F53C;</button>
+              <button onclick="pause()" class="button1 btn btn-outline-primary">&#x23F8;</button>
+              <button onclick="makeBig()" class="btn btn-outline-primary">Big</button>
+              <button onclick="makeSmall()" class="btn btn-outline-primary">Small</button>
+              <button onclick="makeNormal()" class="btn btn-outline-primary">Normal</button>
+
+              <br><br>
+              <video id="video1" width="420">
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+              </video>
+              <br>
+              <button onclick="display()" class="button1">
+                  <span style='font-size:50px;'>&#128077;</span>
+              </button>
+              <br>
+              <p id="ty"></p>
+            </div>
+
+            <script>
+            var myVideo = document.getElementById("video1");
+
+            function play() {
+                myVideo.play();
+            }
+
+            function pause(){
+                myVideo.pause();
+            }
+
+            function makeBig() {
+                myVideo.width = 560;
+            }
+
+            function makeSmall() {
+                myVideo.width = 320;
+            }
+
+            function makeNormal() {
+                myVideo.width = 420;
+            }
+
+
+            function display() {
+                document.getElementById("ty").innerHTML = ('Thank you :)');
+            }
+            </script>
+        </article>
+    </body>
+</html>

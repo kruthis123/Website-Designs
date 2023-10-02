@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Search Results</h1>
+
+    <ul>
+        {% for substring in substrings %}
+            <li><a href="{% url 'entry' substring %}">{{ substring }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
